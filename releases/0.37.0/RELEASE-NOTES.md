@@ -1,0 +1,20 @@
+# CarCad 0.37.0
+
+CI waived by Scott on 18 Oct 2026, re-run when billing is restored.
+
+Batch 8 of ten features (in progress). `CARCAD_TEST_BUILD` is ON: filenames use `0.37.0-test` and the UI says `0.37.0 (test version)`. Numeric `version` stays `0.37.0`. Targets: form.09, form.10, form.11, form.12, sheet.04, sheet.06, sheet.09, sheet.10, sheet.12, plastic.01.
+
+- Add topology repair (form.09, `working_subset`). Weld and orient a form cage. Planar hole fill and non-manifold repair remain limited. Short Form-tool label **Repair** plus `#help-workspace-tools`. Standing acceptance: no long UI text; explanations behind a help (?) icon.
+- Add subdivision to surface conversion (form.10, `working_subset`). Sew cage triangles into a surface shell, not a solid. Catmull-Clark and G2 conversion remain limited. Short Form-tool label **To surface**. Standing acceptance: no long UI text; explanations behind a help (?) icon.
+- Add match analytic surfaces (form.11, `working_subset`). Coplanar cage bins become BRep planes. Cylinder and spline matching remain limited. Short Form-tool label **Match**. Standing acceptance: no long UI text; explanations behind a help (?) icon.
+- Add surface quality checks (form.12, `working_subset`). Watertight cages pass unchanged; open cages are rejected. Curvature maps remain limited. Short Form-tool label **Quality**. Standing acceptance: no long UI text; explanations behind a help (?) icon.
+- Add contour flanges (sheet.04, `working_subset`). Empty-project L-wall of thickness × height. Arbitrary polylines remain limited. Short Sheet-tool label **Contour**. Standing acceptance: no long UI text; explanations behind a help (?) icon.
+- Add corners and seams (sheet.06, `working_subset`). AABB-edge seam gap reduces sheet volume. True corner reliefs remain limited. Short Sheet-tool label **Seam**. Standing acceptance: no long UI text; explanations behind a help (?) icon.
+- Add convert solids to sheet metal (sheet.09, `working_subset`). Thin AABB solid (min extent at most 5 mm) becomes a plate. Neutral-sheet recognition remains limited. Short Sheet-tool label **From solid**. Standing acceptance: no long UI text; explanations behind a help (?) icon.
+- Add thickness consistency (sheet.10, `working_subset`). Stored thickness must match AABB min extent within 0.05 mm; otherwise the command is rejected. Face-by-face wall measurement remains limited. Short Sheet-tool label **Thickness**. Standing acceptance: no long UI text; explanations behind a help (?) icon.
+- Add flat pattern drawings (sheet.12, `working_subset`). Drawing view `kind:'flat'` projects the unfolded sheet rectangle from `sheet_report`. Multi-bend associative flats remain limited. Toolbar: **Flat** plus `#help-drawing-flat`. Standing acceptance: no long UI text; explanations behind a help (?) icon.
+- Add plastic rules (plastic.01, `working_subset`). `plastic_rule` leaves a box that meets stored thickness with draft 0; nonzero draft on an undrafted box is rejected. Bosses, snaps and fillet-radius checks remain limited. Short Plastic-tool label **Rules** plus PLASTIC tab and `#help-plastic-tools`. Standing acceptance: no long UI text; explanations behind a help (?) icon.
+- Scott splash hold. `#startup` shows once at app launch for 5 seconds, then the workspace. File New part and Open project stay on the app screen; they do not re-show `#startup`. Delayed `#work-overlay` still covers long preview/regeneration. Guarded by `splash`. Standing acceptance: no long UI text; explanations behind a help (?) icon. Every new UI element must support dark and light mode.
+- Scott close prompt. Title-bar close with no document, a clean document, or a workspace that is not ready yet exits silently. Save / Don't save / Cancel still appears only when a document has unsaved changes. Windows, macOS and Linux shells drop the "workspace is not ready" warning. Guarded by `close_guard`. Standing acceptance: no long UI text; explanations behind a help (?) icon. Every new UI element must support dark and light mode.
+
+**Platforms:** macOS (Apple silicon, arm64) only for now. Windows installers are coming in a later update to this release.

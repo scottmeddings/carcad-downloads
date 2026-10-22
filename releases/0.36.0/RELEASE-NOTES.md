@@ -14,5 +14,3 @@ Batch 7 of ten features. One minor version per batch of 10. Targets: mesh.11, me
 - Add symmetry (form.06, `working_subset`). Mirror the cage across X=0 and append the reflected triangles. Live multi-axis symmetry remains limited. Short Form-tool label **Symmetry**. Standing acceptance: no long UI text; explanations behind a help (?) icon.
 - Add bridge faces (form.07, `working_subset`). A square tube of triangles spans min-X to max-X through the cage centre. Selected-face bridges remain limited. Short Form-tool label **Bridge**. Standing acceptance: no long UI text; explanations behind a help (?) icon.
 - Add weld and merge (form.08, `working_subset`). Weld cage vertices within a millimetre tolerance. Interactive merge of selected vertices remains limited. Short Form-tool label **Weld**. Standing acceptance: no long UI text; explanations behind a help (?) icon.
-
-**Platforms:** macOS (Apple silicon, arm64) only for now. Windows installers are coming in a later update to this release.

@@ -1,0 +1,5 @@
+87b9883bb5ee76b75f1ff87089d85b284a0bc4abe61dcc9237a4ab05f147abfa  CarCad-0.35.0-Windows-ARM64-Setup.exe
+e42d8176532323a7cb1f5db1f97a6be90ec083ab1fce8b019f1ba0fd47835c17  CarCad-0.35.0-Windows-ARM64.msi
+9353c551828757e1d84dc9e7e925ea06ae1cf7d6bba2f79ca261068d281d16bd  CarCad-0.35.0-Windows-x64-Setup.exe
+2682d1102e164aa25f3b33d6afe1013ffb3a0df4c27546ceb7950d9429e75d1d  CarCad-0.35.0-Windows-x64.msi
+d8e0accf38478d4d30b9b43146659657f2381a14a1e9458ec30fb4fec1969058  CarCad-0.35.0-macOS.dmg

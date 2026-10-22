@@ -2,7 +2,7 @@
 
 CI waived by Scott on 18 Oct 2026, re-run when billing is restored.
 
-Batch 8 of ten features (in progress). `CARCAD_TEST_BUILD` is ON: filenames use `0.37.0-test` and the UI says `0.37.0 (test version)`. Numeric `version` stays `0.37.0`. Targets: form.09, form.10, form.11, form.12, sheet.04, sheet.06, sheet.09, sheet.10, sheet.12, plastic.01.
+Batch 8 of ten features (in progress). Plain release build: filenames and the UI show `0.37.0`, no test label. Targets: form.09, form.10, form.11, form.12, sheet.04, sheet.06, sheet.09, sheet.10, sheet.12, plastic.01.
 
 - Add topology repair (form.09, `working_subset`). Weld and orient a form cage. Planar hole fill and non-manifold repair remain limited. Short Form-tool label **Repair** plus `#help-workspace-tools`. Standing acceptance: no long UI text; explanations behind a help (?) icon.
 - Add subdivision to surface conversion (form.10, `working_subset`). Sew cage triangles into a surface shell, not a solid. Catmull-Clark and G2 conversion remain limited. Short Form-tool label **To surface**. Standing acceptance: no long UI text; explanations behind a help (?) icon.

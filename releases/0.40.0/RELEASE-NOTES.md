@@ -2,7 +2,7 @@
 
 CI waived by Scott on 18 Oct 2026, re-run when billing is restored.
 
-Batch 11 of ten features (in progress). `CARCAD_TEST_BUILD` is ON: filenames use `0.40.0-test` and the UI says `0.40.0 (test version)`. Numeric `version` stays `0.40.0`. Targets: render.01, render.02, render.03, render.04, render.05, render.06, render.07, render.08, render.09, render.10.
+Batch 11 of ten features (in progress). Plain release build: filenames and the UI show `0.40.0`, no test label. Targets: render.01, render.02, render.03, render.04, render.05, render.06, render.07, render.08, render.09, render.10.
 
 - Add material appearances (render.01, `working_subset`). Named appearance RGB 0–1 fills a portable PPM. Texture mapping remains limited. Browser label **Render** plus `#help-render`. Standing acceptance: no long UI text; explanations behind a help (?) icon.
 - Add texture mapping (render.02, `working_subset`). Texture scaleU/scaleV and offsetU/offsetV drive a checker on the portable PPM. PBR maps remain limited. Short Browser label **Render** plus `#help-render`. Standing acceptance: no long UI text; explanations behind a help (?) icon.

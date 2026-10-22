@@ -2,7 +2,7 @@
 
 CI waived by Scott on 18 Oct 2026, re-run when billing is restored.
 
-Batch 9 of ten features (in progress). `CARCAD_TEST_BUILD` is ON: filenames use `0.38.0-test` and the UI says `0.38.0 (test version)`. Numeric `version` stays `0.38.0`. Targets: plastic.02, plastic.03, plastic.04, plastic.05, plastic.06, plastic.07, plastic.08, plastic.09, plastic.10, plastic.11.
+Batch 9 of ten features (in progress). Plain release build: filenames and the UI show `0.38.0`, no test label. Targets: plastic.02, plastic.03, plastic.04, plastic.05, plastic.06, plastic.07, plastic.08, plastic.09, plastic.10, plastic.11.
 
 - Add bosses (plastic.02, `working_subset`). `plastic_boss` fuses a cylinder on the +Z AABB face. Draft, hole and fillet remain limited. Short Plastic-tool label **Boss** plus `#help-plastic-tools`. Standing acceptance: no long UI text; explanations behind a help (?) icon.
 - Add snap fasteners (plastic.03, `working_subset`). `plastic_snap` fuses a rectangular tab on the max-X AABB face. Hook undercut and mating hole remain limited. Short Plastic-tool label **Snap** plus `#help-plastic-tools`. Standing acceptance: no long UI text; explanations behind a help (?) icon.

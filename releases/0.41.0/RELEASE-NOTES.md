@@ -1,0 +1,21 @@
+# CarCad 0.41.0
+
+CI waived by Scott on 18 Oct 2026, re-run when billing is restored.
+
+Batch 12 of ten features. Plain release build: filenames and the UI show `0.41.0`, no test label. Targets: animation.01, animation.02, animation.03, animation.04, animation.05, animation.06, animation.07, animation.08, mfg_setup.01, mfg_setup.02. Portable CTest 54/54 and Linux CTest 65/65 after mfg_setup.02. Linux x64 test packages stay under `test/linux-x64/0.41.0`. Plain Mac/Windows installers require those host builders (Windows `release/` is still 0.36.0).
+
+- Fix Linux .deb never finishing install on Ubuntu 26.04 (App Center spun forever). The package declared `Depends: libxml2`, which does not exist on 26.04 (only `libxml2-16`), and silently needed `libtbb12`. The .deb and AppImage now bundle `libxml2.so.2`, its ICU 74 libraries and oneTBB under `/usr/lib/carcad` (RUNPATH set with patchelf; no more `/usr/lib` symlink farm). `Depends` drops `libxml2`, adds `liblzma5`. No maintainer scripts or debconf prompts.
+- Add Snap packaging (`packaging/linux/snap/snapcraft.yaml`, `packaging/linux/package-snap.sh`): strict confinement, core24 + gnome extension, reuses the bundled-libs .deb payload.
+- Add storyboards (animation.01, `working_subset`). Named storyboards with one active id. Motion remains limited. Browser label **Animate** plus `#help-animation`. Standing acceptance: no long UI text; explanations behind a help (?) icon.
+- Add timed component transforms (animation.02, `working_subset`). First transform time and millimetre XYZ become animationOffset. Interpolation remains limited. Short Browser label **Animate** plus `#help-animation`. Standing acceptance: no long UI text; explanations behind a help (?) icon.
+- Add exploded assemblies (animation.03, `working_subset`). explode millimetres 0–1000 become animationExplode. Auto explode remains limited. Short Browser label **Animate** plus `#help-animation`. Standing acceptance: no long UI text; explanations behind a help (?) icon.
+- Add camera actions (animation.04, `working_subset`). Camera time, eye and target millimetres become animationEye. Paths remain limited. Short Browser label **Animate** plus `#help-animation`. Standing acceptance: no long UI text; explanations behind a help (?) icon.
+- Add visibility actions (animation.05, `working_subset`). hide lists up to eight component ids as animationHiddenCount. Fade remains limited. Short Browser label **Animate** plus `#help-animation`. Standing acceptance: no long UI text; explanations behind a help (?) icon.
+- Add callouts and trails (animation.06, `working_subset`). Named callouts with millimetre XYZ become animationCalloutCount. Trails remain limited. Short Browser label **Animate** plus `#help-animation`. Standing acceptance: no long UI text; explanations behind a help (?) icon.
+- Add playback controls (animation.07, `working_subset`). playback time, duration and playing become animationTime. Audio remains limited. Short Browser label **Animate** plus `#help-animation`. Standing acceptance: no long UI text; explanations behind a help (?) icon.
+- Add video publishing (animation.08, `working_subset`). publish width/height/fps with format ppm become animationPublishFormat. MP4 remains limited. Short Browser label **Animate** plus `#help-animation`. Standing acceptance: no long UI text; explanations behind a help (?) icon.
+- Add manufacturing models (mfg_setup.01, `working_subset`). Named manufacturing models become manufacturingModel. Derived models remain limited. Browser label **Setup** plus `#help-mfg-setup`. Standing acceptance: no long UI text; explanations behind a help (?) icon.
+- Fix Windows Test-NativeDesktop timeout (fails at da39c898, passed at eb3220ab). Smoke navigates to `/?smoke=1` so the 5s splash hold is skipped, and the native smoke timer is 90s (PowerShell 110s). Same skip and timer on Linux and macOS.
+- Add work coordinates (mfg_setup.02, `working_subset`). wcs origin millimetres become manufacturingOrigin. Rotation remains limited. Short Browser label **Setup** plus `#help-mfg-setup`. Standing acceptance: no long UI text; explanations behind a help (?) icon.
+
+**Platforms:** macOS (Apple silicon, arm64) only for now. Windows installers are coming in a later update to this release.

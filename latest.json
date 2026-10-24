@@ -22,6 +22,13 @@
       "size": 272127289,
       "sha256": "875fde757430e6813fc1688403c668b3be16649e3cad76333391f1f25f95bebc",
       "url": "https://github.com/scottmeddings/carcad-downloads/releases/download/v0.36.0/CarCad-0.36.0-Windows-x64-Setup.exe"
+    },
+    "linux-x64": {
+      "version": "0.65.0",
+      "file": "CarCad-0.65.0-linux-x64.AppImage",
+      "size": 38402552,
+      "sha256": "96e2954aad12db7719512af5b519bb3470c37196e4a1062f879d5a75103b194e",
+      "url": "https://github.com/scottmeddings/carcad-downloads/releases/download/v0.65.0/CarCad-0.65.0-linux-x64.AppImage"
     }
   }
 }

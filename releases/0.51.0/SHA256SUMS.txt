@@ -1,0 +1,1 @@
+264fb18c2fda9fc6febb1ac973694b57b1d4ddae5fd2abc7d462cc9b8adbf9cc  CarCad-0.51.0-macOS.dmg

@@ -1,13 +1,13 @@
 {
-  "version": "0.44.0",
+  "version": "0.45.0",
   "date": "2026-10-24",
   "platforms": {
     "macos": {
-      "version": "0.44.0",
-      "file": "CarCad-0.44.0-macOS.dmg",
-      "size": 70376018,
-      "sha256": "d2fcf6900441b8625ddba08a1d4a326f0fd76512c009a34a5ae72790174957d3",
-      "url": "https://github.com/scottmeddings/carcad-downloads/releases/download/v0.44.0/CarCad-0.44.0-macOS.dmg"
+      "version": "0.45.0",
+      "file": "CarCad-0.45.0-macOS.dmg",
+      "size": 70455878,
+      "sha256": "be88aa22fa59bdd40df89a88f0cc9cc08232fe338d8357204ce52e904d39ca02",
+      "url": "https://github.com/scottmeddings/carcad-downloads/releases/download/v0.45.0/CarCad-0.45.0-macOS.dmg"
     },
     "windows-arm64": {
       "version": "0.36.0",

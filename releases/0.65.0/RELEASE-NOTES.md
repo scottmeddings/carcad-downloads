@@ -2,13 +2,17 @@
 
 CI waived by Scott on 18 Oct 2026, re-run when billing is restored.
 
-The Cloud features (cloud.01–cloud.08) are stubbed until the live CarCad Cloud service ships.
+The Cloud features (cloud.01–cloud.08) are stubbed until the live CarCad Cloud service ships. For macOS, this release also includes the changes from 0.53.0 through 0.64.0, which were not published as separate macOS releases.
 
 ## Install on Linux (x64)
 
 - **AppImage** (most distributions): `chmod +x CarCad-0.65.0-linux-x64.AppImage` then run `./CarCad-0.65.0-linux-x64.AppImage`.
 - **Debian / Ubuntu (.deb)**: `sudo apt install ./carcad_0.65.0_amd64.deb`
 - **Snap**: `sudo snap install --dangerous carcad_0.65.0_amd64.snap` (`--dangerous` is needed until CarCad is in the Snap Store).
+
+## Install on macOS (Apple silicon, arm64)
+
+- Open `CarCad-0.65.0-macOS.dmg` and drag CarCad to Applications.
 
 Verify downloads against `SHA256SUMS.txt`.
 
@@ -27,4 +31,4 @@ Batch 36 is the seventh stub-rework batch. Plain release build: filenames and th
 - Rework probe geometry (probing.02, `working_subset`). Offset-profile sample points as probingPath / probingNcProgram. Scan remains limited. Fixture `probing_02_geometry` / CTest `probing.02`.
 - Rework hole recognition (probing.03, `working_subset`). Circle the document hole (L at 4,4) as probingPath / probingNcProgram. Pattern remains limited. Fixture `probing_03_hole` / CTest `probing.03`.
 
-**Platforms:** Linux x64 now. macOS and Windows 0.65.0 installers follow separately.
+**Platforms:** Linux x64 and macOS (Apple silicon, arm64). Windows 0.65.0 installers follow separately.

@@ -1,5 +1,5 @@
 {
-  "version": "0.65.0",
+  "version": "0.68.0",
   "date": "2026-10-25",
   "platforms": {
     "macos": {
@@ -10,18 +10,18 @@
       "url": "https://github.com/scottmeddings/carcad-downloads/releases/download/v0.68.0/CarCad-0.68.0-macOS.dmg"
     },
     "windows-arm64": {
-      "version": "0.65.0",
-      "file": "CarCad-0.65.0-Windows-ARM64-Setup.exe",
-      "size": 251998409,
-      "sha256": "49535d4bffa8b76bdbdad87976440337215635eae7f8fb6edb0a05bf05faa88b",
-      "url": "https://github.com/scottmeddings/carcad-downloads/releases/download/v0.65.0/CarCad-0.65.0-Windows-ARM64-Setup.exe"
+      "version": "0.68.0",
+      "file": "CarCad-0.68.0-Windows-ARM64-Setup.exe",
+      "size": 252053251,
+      "sha256": "cd755f068c38c7cff564c6c2b13de24cac70e8e68023628ad6a52a1bbc01f85d",
+      "url": "https://github.com/scottmeddings/carcad-downloads/releases/download/v0.68.0/CarCad-0.68.0-Windows-ARM64-Setup.exe"
     },
     "windows-x64": {
-      "version": "0.65.0",
-      "file": "CarCad-0.65.0-Windows-x64-Setup.exe",
-      "size": 272492317,
-      "sha256": "0c27d64e0a185f27a6ba1b62c3103d9d4edb4842ca9c730dcf5e907f2d295786",
-      "url": "https://github.com/scottmeddings/carcad-downloads/releases/download/v0.65.0/CarCad-0.65.0-Windows-x64-Setup.exe"
+      "version": "0.68.0",
+      "file": "CarCad-0.68.0-Windows-x64-Setup.exe",
+      "size": 272560565,
+      "sha256": "bf470c1697130060889273e30295d325f65407dc12137fc3232b00a84ea18d02",
+      "url": "https://github.com/scottmeddings/carcad-downloads/releases/download/v0.68.0/CarCad-0.68.0-Windows-x64-Setup.exe"
     },
     "linux-x64": {
       "version": "0.68.0",

@@ -14,9 +14,13 @@ Plain release build: filenames and the UI show 0.68.0, no test label. The Cloud 
 
 - Open `CarCad-0.68.0-macOS.dmg` and drag CarCad to Applications.
 
-## Windows
+## Install on Windows (ARM64 or x64)
 
-Windows 0.68.0 installers follow separately. Until then, the Windows ARM64 and x64 installers from [CarCad 0.65.0](https://github.com/scottmeddings/carcad-downloads/releases/tag/v0.65.0) are current.
+- Choose ARM64 for Windows PCs with an ARM-based processor, x64 for 64-bit Intel or AMD processors.
+- **Setup.exe**: run `CarCad-0.68.0-Windows-ARM64-Setup.exe` or `CarCad-0.68.0-Windows-x64-Setup.exe`.
+- **MSI**: run `CarCad-0.68.0-Windows-ARM64.msi` or `CarCad-0.68.0-Windows-x64.msi`.
+- The installers are unsigned, so Windows SmartScreen may warn. Choose **More info**, then **Run anyway**.
+- The x64 build was tested under x64 emulation on Windows 11 ARM64, not on native x64 hardware.
 
 Verify downloads against `SHA256SUMS.txt`.
 
@@ -48,4 +52,4 @@ Batch 39 re-cut (25 Oct 2026) at facing-safety `6df901b`. Portable CTest 253/253
 
 Correction (24 Oct 2026): an independent audit at 3b02d5e found these 0.68.0 document claims false. Units only change the feature-editor length fields and the stats line; sketch, measure, mass, parameters and CAM stay in millimetres. Twenty-one bodies still fail — the kernel rejects more than 20 solids. Delete does not cascade: the app says “Delete dependent features first”, and the editor Delete key removes one feature with no check. Mass works on one solid only. Occurrences only translate, and Add Occurrence always uses [20,0,0]. Most document tests call native helpers the running app never calls.
 
-**Platforms:** Linux x64 and macOS (Apple silicon, arm64). Windows 0.68.0 installers follow separately.
+**Platforms:** Linux x64, macOS (Apple silicon, arm64), and Windows ARM64 and x64.

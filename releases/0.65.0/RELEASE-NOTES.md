@@ -14,6 +14,14 @@ The Cloud features (cloud.01–cloud.08) are stubbed until the live CarCad Cloud
 
 - Open `CarCad-0.65.0-macOS.dmg` and drag CarCad to Applications.
 
+## Install on Windows (ARM64 or x64)
+
+- Choose ARM64 for Windows PCs with an ARM-based processor, x64 for 64-bit Intel or AMD processors.
+- **Setup.exe**: run `CarCad-0.65.0-Windows-ARM64-Setup.exe` or `CarCad-0.65.0-Windows-x64-Setup.exe`.
+- **MSI**: run `CarCad-0.65.0-Windows-ARM64.msi` or `CarCad-0.65.0-Windows-x64.msi`.
+- The installers are unsigned, so Windows SmartScreen may warn. Choose **More info**, then **Run anyway**.
+- The x64 build was tested under x64 emulation on Windows 11 ARM64, not on native x64 hardware.
+
 Verify downloads against `SHA256SUMS.txt`.
 
 ## 0.65.0
@@ -31,4 +39,4 @@ Batch 36 is the seventh stub-rework batch. Plain release build: filenames and th
 - Rework probe geometry (probing.02, `working_subset`). Offset-profile sample points as probingPath / probingNcProgram. Scan remains limited. Fixture `probing_02_geometry` / CTest `probing.02`.
 - Rework hole recognition (probing.03, `working_subset`). Circle the document hole (L at 4,4) as probingPath / probingNcProgram. Pattern remains limited. Fixture `probing_03_hole` / CTest `probing.03`.
 
-**Platforms:** Linux x64 and macOS (Apple silicon, arm64). Windows 0.65.0 installers follow separately.
+**Platforms:** Linux x64, macOS (Apple silicon, arm64), and Windows ARM64 and x64.

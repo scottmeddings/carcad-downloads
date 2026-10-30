@@ -13,5 +13,5 @@ Installers are attached to each GitHub Release, not committed to the repository.
 | Platform | Version |
 |---|---|
 | macOS (Apple silicon) | 0.70.1 |
-| Linux x64 (AppImage, .deb) | 0.70.1 |
+| Linux x64 (AppImage, .deb, snap) | 0.70.1 |
 | Windows ARM64 / x64 | 0.70.1 |

@@ -29,6 +29,13 @@
       "size": 45865464,
       "sha256": "80f89ffa3ae52a52e0511b235487c9251c2885adfc1906cd445dc5de80fe2fb2",
       "url": "https://github.com/scottmeddings/carcad-downloads/releases/download/v0.70.1/CarCad-0.70.1-linux-x64.AppImage"
+    },
+    "linux-snap": {
+      "version": "0.70.1",
+      "file": "carcad_0.70.1_amd64.snap",
+      "size": 35504128,
+      "sha256": "7148ee3864e8092894a81cd2532f1842ebb492b8c2285a2da6f0c1f6a6efab59",
+      "url": "https://github.com/scottmeddings/carcad-downloads/releases/download/v0.70.1/carcad_0.70.1_amd64.snap"
     }
   }
 }

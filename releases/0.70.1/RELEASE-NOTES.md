@@ -16,13 +16,13 @@ Plain release build: filenames and the UI show 0.70.1, no test label. This relea
 - macOS (Apple silicon, arm64): `CarCad-0.70.1-macOS.dmg`
 - Windows ARM64: `CarCad-0.70.1-Windows-ARM64-Setup.exe`, `CarCad-0.70.1-Windows-ARM64.msi`
 - Windows x64: `CarCad-0.70.1-Windows-x64-Setup.exe`, `CarCad-0.70.1-Windows-x64.msi`
-- Linux x64: `CarCad-0.70.1-linux-x64.AppImage`, `carcad_0.70.1_amd64.deb`
-- **Linux snap: coming in a follow-up upload to this same release.** Until then, use the AppImage or .deb.
+- Linux x64: `CarCad-0.70.1-linux-x64.AppImage`, `carcad_0.70.1_amd64.deb`, `carcad_0.70.1_amd64.snap` (snap added in a follow-up upload on 31 Oct 2026; built on Ubuntu 24.04 / core24, snap-review pass)
 
 ## Install on Linux (x64)
 
 - **AppImage**: `chmod +x CarCad-0.70.1-linux-x64.AppImage` then run `./CarCad-0.70.1-linux-x64.AppImage`.
 - **Debian / Ubuntu (.deb)**: `sudo apt install ./carcad_0.70.1_amd64.deb`
+- **Snap**: `sudo snap install --dangerous carcad_0.70.1_amd64.snap` (`--dangerous` is needed until CarCad is in the Snap Store).
 
 ## Install on macOS (Apple silicon, arm64)
 

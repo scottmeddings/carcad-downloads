@@ -7,3 +7,11 @@ Public installers and release notes for CarCad. This repository contains no appl
 - Release notes and SHA-256 checksums: [`releases/`](releases/)
 
 Installers are attached to each GitHub Release, not committed to the repository. Verify downloads against `SHA256SUMS.txt`.
+
+## Current versions
+
+| Platform | Version |
+|---|---|
+| macOS (Apple silicon) | 0.70.0 |
+| Linux x64 (AppImage, .deb) | 0.70.0 |
+| Windows ARM64 / x64 | 0.69.0 (0.70.0 Windows build pending) |

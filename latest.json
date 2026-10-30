@@ -1,13 +1,13 @@
 {
-  "version": "0.69.0",
-  "date": "2026-10-26",
+  "version": "0.70.0",
+  "date": "2026-10-30",
   "platforms": {
     "macos": {
-      "version": "0.69.0",
-      "file": "CarCad-0.69.0-macOS.dmg",
-      "size": 70873247,
-      "sha256": "1a8e49bb3d4b2712d029304b23fe80862190afb51855202afbb380005b5e3236",
-      "url": "https://github.com/scottmeddings/carcad-downloads/releases/download/v0.69.0/CarCad-0.69.0-macOS.dmg"
+      "version": "0.70.0",
+      "file": "CarCad-0.70.0-macOS.dmg",
+      "size": 136707048,
+      "sha256": "c1ff2f0d01def5d3ef77f3af1be6b5ee580a76bbfb6450489b205006067370ad",
+      "url": "https://github.com/scottmeddings/carcad-downloads/releases/download/v0.70.0/CarCad-0.70.0-macOS.dmg"
     },
     "windows-arm64": {
       "version": "0.69.0",
@@ -24,11 +24,11 @@
       "url": "https://github.com/scottmeddings/carcad-downloads/releases/download/v0.69.0/CarCad-0.69.0-Windows-x64-Setup.exe"
     },
     "linux-x64": {
-      "version": "0.69.0",
-      "file": "CarCad-0.69.0-linux-x64.AppImage",
-      "size": 38763000,
-      "sha256": "2541e85d573d0358ec332b242cf07093ad9daa248853e91f0dffdffbc240d9b7",
-      "url": "https://github.com/scottmeddings/carcad-downloads/releases/download/v0.69.0/CarCad-0.69.0-linux-x64.AppImage"
+      "version": "0.70.0",
+      "file": "CarCad-0.70.0-linux-x64.AppImage",
+      "size": 45857272,
+      "sha256": "4dc4376e14a94afd1a8e585f7985938b50f8d839008f1c951661b922329b3660",
+      "url": "https://github.com/scottmeddings/carcad-downloads/releases/download/v0.70.0/CarCad-0.70.0-linux-x64.AppImage"
     }
   }
 }
